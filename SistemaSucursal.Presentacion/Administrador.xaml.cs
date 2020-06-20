@@ -39,7 +39,7 @@ namespace SistemaSucursal.Presentacion
             SqlCommand con = new SqlCommand("select id_sucursal,nombre_sucursal from SUCURSAL", conexion);
             SqlDataAdapter data = new SqlDataAdapter(con);
             DataSet ds = new DataSet();
-            data.Fill(ds, "SUCURSAL");
+            data.Fill(ds, "SUCURSAL");chupalo igor ctm jajajajajajja
             combosucu.ItemsSource = ds.Tables[0].DefaultView;
             combosucu.DisplayMemberPath = ds.Tables[0].Columns["nombre_sucursal"].ToString();
             combosucu.SelectedValuePath = ds.Tables[0].Columns["id_sucursal"].ToString();
